@@ -5,16 +5,13 @@
  */
 
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Example from './components/Example.vue'
-import User from './components/User.vue'
-import UserHome from './components/UserHome.vue'
-import UserProfile from './components/UserProfile.vue'
-import UserPosts from './components/UserPosts.vue'
+import axios from 'axios'
+//import VueRouter from 'vue-router'
+//import Example from './components/Example.vue'
 
 require('./bootstrap')
 
-Vue.use(VueRouter)
+//Vue.use(VueRouter)
 
 /**
  * The following block of code may be used to automatically register your
@@ -27,6 +24,7 @@ Vue.use(VueRouter)
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
+/*
 const router = new VueRouter({
     mode: 'history',
     routes: [
@@ -40,6 +38,7 @@ const router = new VueRouter({
         }
     ]
 })
+*/
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -48,6 +47,38 @@ const router = new VueRouter({
  */
 
 const app = new Vue({
-    router,
-    el: '#app'
+    //router,
+    el: '#app',
+    data: {
+        new_todo: '',
+        todos: []
+    },
+    methods: {
+
+        fetchTodos: function () {
+            axios.get('/api/get').then((res) => {
+                this.todos = res.data
+            })
+        },
+
+        addTodo: function () {
+            axios.post('/api/add', {
+                title: this.new_todo
+            }).then((res) => {
+                this.todos = res.data
+                this.new_todo = ''
+            })
+        },
+
+        deleteTodo: function (task_id) {
+            axios.post('/api/del', {
+                id: task_id
+            }).then((res) => {
+                this.todos = res.data
+            })
+        }
+    },
+    created() {
+        this.fetchTodos()
+    },
 });
