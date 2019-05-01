@@ -6,12 +6,11 @@
 
 import Vue from 'vue'
 import axios from 'axios'
-//import VueRouter from 'vue-router'
-//import Example from './components/Example.vue'
-
+import router from './router.js'
+import App from './components/App.vue'
+import vueSmoothScroll from 'vue-smooth-scroll'
+Vue.use(vueSmoothScroll)
 require('./bootstrap')
-
-//Vue.use(VueRouter)
 
 /**
  * The following block of code may be used to automatically register your
@@ -24,22 +23,6 @@ require('./bootstrap')
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-/*
-const router = new VueRouter({
-    mode: 'history',
-    routes: [
-        { path: '/', component: Example },
-        {
-            path: '/user', component: User, children: [
-                { path: '', component: UserHome },
-                { path: 'profile', component: UserProfile },
-                { path: 'posts', component: UserPosts }
-            ]
-        }
-    ]
-})
-*/
-
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -47,8 +30,10 @@ const router = new VueRouter({
  */
 
 const app = new Vue({
-    //router,
+    router,
     el: '#app',
+    template: '<App/>',
+    components: { App },
     data: {
         new_todo: '',
         todos: []
@@ -81,4 +66,15 @@ const app = new Vue({
     created() {
         this.fetchTodos()
     },
-});
+})
+
+//スクロール量を取得する関数
+function getScrolled() {
+    return (window.pageYOffset !== undefined) ? window.pageYOffset : document.documentElement.scrollTop
+}
+//トップに戻るボタンの要素を取得
+const topBtn = document.querySelector('.top-btn')
+//ボタンの表示・非表示
+window.onscroll = function () {
+    (getScrolled() > 50) ? topBtn.classList.add('fade-in') : topBtn.classList.remove('fade-in');
+}

@@ -1,1 +1,25 @@
 @import 'reset';
+
+body {
+  background: #f0f0f0;
+  font-family: 'Noto Sans JP', sans-serif;
+  color:#333;
+  line-height: 1.5em;
+  letter-spacing: 0.01em;
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+h2 {
+  font-size: 44px;
+  margin-bottom:16px;
+  line-height: 1.1;
+}
+
+.wrap {
+  min-height:100vh;
+}
