@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <div class="wrap">
-      <HeaderComponent></HeaderComponent>
+      <header-component></header-component>
       <router-view></router-view>
     </div>
-    <TopButton></TopButton>
-    <FooterComponent></FooterComponent>
+    <top-button></top-button>
+    <footer-component></footer-component>
   </div>
 </template>
 

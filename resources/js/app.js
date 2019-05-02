@@ -5,76 +5,36 @@
  */
 
 import Vue from 'vue'
-import axios from 'axios'
-import router from './router.js'
+import VueRouter from 'vue-router'
 import App from './components/App.vue'
-import vueSmoothScroll from 'vue-smooth-scroll'
-Vue.use(vueSmoothScroll)
+import Todos from './components/Todos.vue'
+import About from './components/About.vue'
+//import Login from './components/Login.vue'
+
+Vue.use(VueRouter)
+
 require('./bootstrap')
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
-
-// const files = require.context('./', true, /\.vue$/i);
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+const router = new VueRouter({
+    mode: 'history',
+    routes: [
+        { path: '/', component: Todos },
+        { path: '/about', component: About },
+        //{ path: '/login', component: Login },
+        { path: '*', component: Todos },
+    ],
+    scrollBehavior(to, from, savedPosition) {
+        if (savedPosition) {
+            return savedPosition
+        } else {
+            return { x: 0, y: 0 }
+        }
+    }
+})
 
 const app = new Vue({
     router,
     el: '#app',
     template: '<App/>',
     components: { App },
-    data: {
-        new_todo: '',
-        todos: []
-    },
-    methods: {
-
-        fetchTodos: function () {
-            axios.get('/api/get').then((res) => {
-                this.todos = res.data
-            })
-        },
-
-        addTodo: function () {
-            axios.post('/api/add', {
-                title: this.new_todo
-            }).then((res) => {
-                this.todos = res.data
-                this.new_todo = ''
-            })
-        },
-
-        deleteTodo: function (task_id) {
-            axios.post('/api/del', {
-                id: task_id
-            }).then((res) => {
-                this.todos = res.data
-            })
-        }
-    },
-    created() {
-        this.fetchTodos()
-    },
 })
-
-//スクロール量を取得する関数
-function getScrolled() {
-    return (window.pageYOffset !== undefined) ? window.pageYOffset : document.documentElement.scrollTop
-}
-//トップに戻るボタンの要素を取得
-const topBtn = document.querySelector('.top-btn')
-//ボタンの表示・非表示
-window.onscroll = function () {
-    (getScrolled() > 50) ? topBtn.classList.add('fade-in') : topBtn.classList.remove('fade-in');
-}
