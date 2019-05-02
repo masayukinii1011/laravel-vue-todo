@@ -1,7 +1,7 @@
-<template>
-  <p class="top-btn" v-bind:class="{'fade-in':isActive }">
-    <a href="#top" v-smooth-scroll><i class="fas fa-angle-up"></i></a>
-  </p>
+<template lang="pug">
+p.top-btn(v-bind:class="{'fade-in':isActive }")
+  a(href="#top" v-smooth-scroll)
+    i.fas.fa-angle-up
 </template>
 
 <script>

@@ -1,7 +1,6 @@
-<template>
-  <footer>
-    <p>©Copyright 2019 Masayuki Nii All Rights Reserved.</p>
-  </footer>
+<template lang="pug">
+footer
+  p ©Copyright 2019 Masayuki Nii All Rights Reserved.
 </template>
 
 <style lang="scss">

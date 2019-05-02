@@ -1,5 +1,3 @@
-<template>
-  <div>
-    This page describes who we are.
-  </div>
+<template lang="pug">
+p This page describes who we are.
 </template>
