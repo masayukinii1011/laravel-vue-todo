@@ -5,7 +5,7 @@
         <h1><router-link to="/">My Todo</router-link></h1>
         <ul class="nav-menu">
           <li><router-link to="/about" class="nav-about">About</router-link></li>
-          <li><router-link to="/users/sign_out" class="nav-logout">Log Out</router-link></li>
+          <li><router-link to="/" class="nav-login">Log In</router-link></li>
         </ul>
       </div>
     </nav>
@@ -77,7 +77,3 @@
     }
   }
 </style>
-
-<script>
-
-</script>
