@@ -37938,9 +37938,265 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("p", [_vm._v("This page describes who we are.")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h2", [_vm._v("About")]),
+      _c("p", { staticStyle: { "font-weight": "bold" } }, [
+        _vm._v("Hello."),
+        _c("br"),
+        _vm._v("My name is Masayuki Nii."),
+        _c("br"),
+        _vm._v("I'm a web engineer."),
+        _c("br"),
+        _c("br")
+      ]),
+      _c("p", [
+        _vm._v("簡易的なTodo機能を作りました。"),
+        _c("br"),
+        _vm._v("バックエンドはLaravel、フロントエンドはVue.jsで実装。"),
+        _c("br"),
+        _vm._v(
+          "バックエンドとフロントエンドのデータの受け渡しはaxiosライブラリを使用してAPIで行う。"
+        ),
+        _c("br"),
+        _vm._v(
+          "Vue.js単一コンポーネントファイル内のtemplateはpug、styleはscssで記述。"
+        ),
+        _c("br"),
+        _vm._v("Vue RouterでSPA化。"),
+        _c("br"),
+        _vm._v("Herokuへデプロイ。"),
+        _c("br"),
+        _c("br")
+      ]),
+      _c("p", [
+        _vm._v("課題：ログイン機能、レスポンシブ未対応"),
+        _c("br"),
+        _c("br")
+      ]),
+      _c("p", [_vm._v("参考サイト："), _c("br")]),
+      _c("p", [
+        _vm._v(
+          "Laravel × Vue.js × axiosでTODOリストを作るよ！ その1 | とんよー。ブログ"
+        ),
+        _c("br"),
+        _c(
+          "a",
+          {
+            attrs: {
+              href:
+                "https://tonyo.design/program/vue-js/todo-list_with_laravel_vue_axios_no1/"
+            }
+          },
+          [
+            _vm._v(
+              "https://tonyo.design/program/vue-js/todo-list_with_laravel_vue_axios_no1/"
+            ),
+            _c("br"),
+            _c("br")
+          ]
+        )
+      ]),
+      _c("p", [
+        _vm._v(
+          "Laravelをherokuにデプロイする(データベースはPostgreSQL) - Qiita"
+        ),
+        _c("br"),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://qiita.com/tamappe/items/14a4e6890ecef4d49d1f"
+            }
+          },
+          [
+            _vm._v("https://qiita.com/tamappe/items/14a4e6890ecef4d49d1f"),
+            _c("br"),
+            _c("br")
+          ]
+        )
+      ]),
+      _c("p", [
+        _vm._v(
+          "Laravel + Vue.js + vue-router + axios.postでSPA作成(記事投稿機能) - Qiita"
+        ),
+        _c("br"),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://qiita.com/Yorinton/items/944044371dec48346eda"
+            }
+          },
+          [
+            _vm._v("https://qiita.com/Yorinton/items/944044371dec48346eda"),
+            _c("br"),
+            _c("br")
+          ]
+        )
+      ]),
+      _c("p", [
+        _vm._v(
+          "STEP04：Laravel5.7 + Vue2.5 でvue-routerとVuetifyを使ってみる - Qiita"
+        ),
+        _c("br"),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://qiita.com/nobu-maple/items/43c1228b8f04837d753b"
+            }
+          },
+          [
+            _vm._v("https://qiita.com/nobu-maple/items/43c1228b8f04837d753b"),
+            _c("br"),
+            _c("br")
+          ]
+        )
+      ]),
+      _c("p", [
+        _vm._v("【Vue.js】コンポーネントの定義方法 | とものブログ"),
+        _c("br"),
+        _c(
+          "a",
+          {
+            attrs: {
+              href:
+                "https://se-tomo.com/2018/11/01/vue-js-%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+            }
+          },
+          [
+            _vm._v(
+              "https://se-tomo.com/2018/11/01/vue-js-%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+            ),
+            _c("br"),
+            _c("br")
+          ]
+        )
+      ]),
+      _c("p", [
+        _vm._v("超基本的なdeviseの使い方 - Qiita"),
+        _c("br"),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://qiita.com/yoshimitsu41/items/ba5487e18278822828a3"
+            }
+          },
+          [
+            _vm._v("https://qiita.com/yoshimitsu41/items/ba5487e18278822828a3"),
+            _c("br"),
+            _c("br")
+          ]
+        )
+      ]),
+      _c("p", [
+        _vm._v("ネストされたルート | Vue Router"),
+        _c("br"),
+        _c(
+          "a",
+          {
+            attrs: {
+              href:
+                "https://router.vuejs.org/ja/guide/essentials/nested-routes.html"
+            }
+          },
+          [
+            _vm._v(
+              "https://router.vuejs.org/ja/guide/essentials/nested-routes.html"
+            ),
+            _c("br"),
+            _c("br")
+          ]
+        )
+      ]),
+      _c("p", [
+        _vm._v("Vue.jsでtoggleClass | ITかあさん"),
+        _c("br"),
+        _c("a", { attrs: { href: "http://www.kaasan.info/archives/4270" } }, [
+          _vm._v("http://www.kaasan.info/archives/4270"),
+          _c("br"),
+          _c("br")
+        ])
+      ]),
+      _c("p", [
+        _vm._v("Vue.jsでスクロールを検知する - Qiita"),
+        _c("br"),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://qiita.com/SatoTakumi/items/d88df8afae82c53d2d2a"
+            }
+          },
+          [
+            _vm._v("https://qiita.com/SatoTakumi/items/d88df8afae82c53d2d2a"),
+            _c("br"),
+            _c("br")
+          ]
+        )
+      ]),
+      _c("p", [
+        _vm._v(
+          "Laravel + SQLite + Vue.js + Pug + Stylusの環境構築をサクッと行う - Qiita"
+        ),
+        _c("br"),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://qiita.com/yusk24/items/fc178be284e43769bd05"
+            }
+          },
+          [
+            _vm._v("https://qiita.com/yusk24/items/fc178be284e43769bd05"),
+            _c("br"),
+            _c("br")
+          ]
+        )
+      ]),
+      _c("p", [
+        _vm._v(
+          "覚えるのはこれだけ！Pug(Jade)のよく使う9つの書き方 ｜ Tips Note by TAM"
+        ),
+        _c("br"),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://www.tam-tam.co.jp/tipsnote/html_css/post12789.html"
+            }
+          },
+          [
+            _vm._v(
+              "https://www.tam-tam.co.jp/tipsnote/html_css/post12789.html"
+            ),
+            _c("br"),
+            _c("br")
+          ]
+        )
+      ]),
+      _c("p", [
+        _vm._v(
+          "【Laravel】Classが見つからない！なんてエラーが出たときの処理｜Laravel｜PHP｜開発ブログ｜株式会社Nextat（ネクスタット）"
+        ),
+        _c("br"),
+        _c(
+          "a",
+          { attrs: { href: "https://nextat.co.jp/staff/archives/121" } },
+          [_vm._v("https://nextat.co.jp/staff/archives/121")]
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 

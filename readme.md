@@ -1,71 +1,37 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# README
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+簡易的なTodo機能を作りました。<br>バックエンドはLaravel、フロントエンドはVue.jsで実装。<br>バックエンドとフロントエンドのデータの受け渡しはaxiosライブラリを使用してAPIで行う。<br>Vue.js単一コンポーネントファイル内のtemplateはpug、styleはscssで記述。<br>Vue RouterでSPA化。<br>Herokuへデプロイ。
 
-## About Laravel
+課題：ログイン認証、レスポンシブ未対応
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+参考サイト：
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Laravel × Vue.js × axiosでTODOリストを作るよ！ その1 | とんよー。ブログ<br>
+https://tonyo.design/program/vue-js/todo-list_with_laravel_vue_axios_no1/
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Laravelをherokuにデプロイする(データベースはPostgreSQL) - Qiita<br>
+https://qiita.com/tamappe/items/14a4e6890ecef4d49d1f
 
-## Learning Laravel
+Laravel + Vue.js + vue-router + axios.postでSPA作成(記事投稿機能) - Qiita<br>
+https://qiita.com/Yorinton/items/944044371dec48346eda
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+STEP04：Laravel5.7 + Vue2.5 でvue-routerとVuetifyを使ってみる - Qiita<br>
+https://qiita.com/nobu-maple/items/43c1228b8f04837d753b
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost you and your team's skills by digging into our comprehensive video library.
+【Vue.js】コンポーネントの定義方法 | とものブログ<br>
+https://se-tomo.com/2018/11/01/vue-js-%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/
 
-## Laravel Sponsors
+ネストされたルート | Vue Router<br>
+https://router.vuejs.org/ja/guide/essentials/nested-routes.html
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Vue.jsでtoggleClass | ITかあさん<br>
+http://www.kaasan.info/archives/4270
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
+Vue.jsでスクロールを検知する - Qiita<br>
+https://qiita.com/SatoTakumi/items/d88df8afae82c53d2d2a
 
-## Contributing
+Laravel + SQLite + Vue.js + Pug + Stylusの環境構築をサクッと行う - Qiita<br>
+https://qiita.com/yusk24/items/fc178be284e43769bd05
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+覚えるのはこれだけ！Pug(Jade)のよく使う9つの書き方 ｜ Tips Note by TAM<br>
+https://www.tam-tam.co.jp/tipsnote/html_css/post12789.html
