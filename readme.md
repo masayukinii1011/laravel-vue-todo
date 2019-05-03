@@ -35,3 +35,6 @@ https://qiita.com/yusk24/items/fc178be284e43769bd05
 
 覚えるのはこれだけ！Pug(Jade)のよく使う9つの書き方 ｜ Tips Note by TAM<br>
 https://www.tam-tam.co.jp/tipsnote/html_css/post12789.html
+
+【Laravel】Classが見つからない！なんてエラーが出たときの処理｜Laravel｜PHP｜開発ブログ｜株式会社Nextat（ネクスタット）
+https://nextat.co.jp/staff/archives/121
