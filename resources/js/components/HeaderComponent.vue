@@ -1,15 +1,14 @@
-<template>
-  <header>
-    <nav>
-      <div class="nav-wrapper">
-        <h1><router-link to="/">My Todo</router-link></h1>
-        <ul class="nav-menu">
-          <li><router-link to="/about" class="nav-about">About</router-link></li>
-          <li><router-link to="/" class="nav-login">Log In</router-link></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<template lang="pug">
+header
+  nav
+    div.nav-wrapper
+      h1
+        router-link(to="/") My Todo
+      ul.nav-menu
+        li
+          router-link.nav-about(to="/about") About
+        li
+          router-link.nav-login(to="/") Log In
 </template>
 
 <style lang="scss">

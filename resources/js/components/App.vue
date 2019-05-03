@@ -1,12 +1,10 @@
-<template>
-  <div id="app">
-    <div class="wrap">
-      <header-component></header-component>
-      <router-view></router-view>
-    </div>
-    <top-button></top-button>
-    <footer-component></footer-component>
-  </div>
+<template lang="pug">
+div#app
+  div.wrap
+    header-component
+    router-view
+  top-button
+  footer-component
 </template>
 
 <script>
