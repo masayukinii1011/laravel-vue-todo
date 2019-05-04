@@ -15,8 +15,6 @@ div
     a(href="https://qiita.com/nobu-maple/items/43c1228b8f04837d753b") https://qiita.com/nobu-maple/items/43c1228b8f04837d753b<br><br>
   p 【Vue.js】コンポーネントの定義方法 | とものブログ<br>
     a(href="https://se-tomo.com/2018/11/01/vue-js-%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/" style="word-wrap: break-word;") https://se-tomo.com/2018/11/01/vue-js-%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/<br><br>
-  p 超基本的なdeviseの使い方 - Qiita<br>
-    a(href="https://qiita.com/yoshimitsu41/items/ba5487e18278822828a3") https://qiita.com/yoshimitsu41/items/ba5487e18278822828a3<br><br>
   p ネストされたルート | Vue Router<br>
     a(href="https://router.vuejs.org/ja/guide/essentials/nested-routes.html") https://router.vuejs.org/ja/guide/essentials/nested-routes.html<br><br>
   p Vue.jsでtoggleClass | ITかあさん<br>
